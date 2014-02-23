@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_list_selector"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:id="@+id/item_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/feed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="feed_title" />
+
+        <TextView
+            android:id="@+id/item_pub_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="item_pub_time"
+            android:textColor="#CCCCCC" />
+
+        <ImageView
+            android:id="@+id/feed_ico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/item_pub_time"
+            android:layout_margin="1dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rss_orange" />
+
+        <TextView
+            android:id="@+id/item_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_pub_time"
+            android:layout_toRightOf="@+id/feed_ico"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <!-- android:text="item_sum" -->
+
+        <CheckBox
+            android:id="@+id/item_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_sum"
+            android:button="@drawable/star_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- menu -->
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="menu_head_height">48dp</dimen>
+    
+    
+    <!-- 菜单item -->
+    <dimen name="pageket_list_item_height">55dp</dimen>
+    <dimen name="menu_list_item_height">55dp</dimen>
+    <dimen name="channel_list_item_height">150dp</dimen>
+    
+</resources>
